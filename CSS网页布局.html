@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS网页布局</title>
+        <style>
+            *{
+                padding: 0px;
+                margin: 0px;
+            }
+            ul li{
+                display: inline;
+                list-style: none;
+            }
+            #theHead{
+                background-color: rgb(243, 245, 247);
+                height: 100px;
+                width: auto;
+            }
+            #tureHead{
+                height: 100px;
+                width: 1200px;
+                position: absolute;
+                top: 0px;
+                left: 50%;
+                margin-left: -600px;
+            }
+            #head1{
+                color: rgb(0, 164, 255);
+                font-size: 35px;
+                margin-top: 30px;
+                float: left;
+                font-weight: bold;
+            }
+            #head2{
+                margin-left: 190px;
+            }
+            #head2>li{
+                margin-left: 30px;
+                height: 40px;
+                width: 70px;
+                float: left;
+                margin-top: 30px;
+                line-height: 40px;
+                text-align: center;
+            }
+            #head21{
+                border-bottom: solid 2px rgb(0, 164, 255);
+            }
+            
+            #head3{
+                float: left;
+                margin-left: 200px;
+                margin-top: 30px;
+                width: 420px;
+            }
+            #head31{
+                height: 40px;
+                width: 360px;
+                border: solid 1px rgb(0, 164, 255);
+                color: rgb(200, 200, 200);
+                line-height: 40px;
+                /* margin-left: 20px; */
+            }
+            #head31>img{
+                float: right;
+                margin-right: -1px;
+                height: 40px;
+                width: 45px;
+            }
+            #head4{
+                height: 40px;
+                width: 80px;
+                float: right;
+                margin-top: 30px;
+                line-height: 40px;
+                text-align: center;
+                color: rgb(138, 138, 138);
+            }
+
+            #theNeck{
+                background-color: rgb(28, 3, 108);
+                height: 420px;
+                width: auto;
+            }
+            #tureNeck{
+                height: 420px;
+                width: 1200px;
+                position: relative;
+                top: 0px;
+                left: 50%;
+                margin-left: -600px;
+            }
+            #neck1{
+                width: 190px;
+                height: 420px;
+                float: left;
+                background-color: rgb(20, 2, 75);
+                color: white;
+            }
+            #neck1>ul>li{
+                display: block;
+                width: 180px;
+                height: 45px;
+                line-height: 45px;
+                color: white;
+                margin-left: 15px;
+                font-size: 13px;
+            }
+            #tureNeck>img{
+                height: 420px;
+                width: 1000px;
+                float: left;
+            }
+
+            #theBody{
+                background-color: rgb(243, 245, 247);
+                height: 1530px;
+                width: auto;
+            }
+            #body1{
+                height: 68px;
+                width: 1200px;
+                position: relative;
+                top: 3px;
+                left: 50%;
+                margin-left: -600px;
+                background-color: white;
+            }
+            #body1>ul>li{
+                margin-top: 25px;
+                height: 15px;
+                width: 124px;
+                line-height: 15px;
+                text-align: center;
+                font-size: 13px;
+                float: left;
+                border-right: solid 1px rgb(200, 200, 200);
+            }
+            #body1>p{
+                color: rgb(0, 165, 255);
+                font-size: 10px;
+                float: right;
+                margin-top: 25px;
+                margin-right: 80px;
+            }
+            #body2{
+                height: 80px;
+                width: 1200px;
+                position: relative;
+                top: 0px;
+                left: 50%;
+                margin-left: -600px;
+            }
+            #body21{
+                line-height: 80px;
+                width: 200px;
+                height: 80px;
+                float: left;
+            }
+            #body22{
+                width: 100px;
+                line-height: 80px;
+                font-size: 10px;
+                color: rgb(200, 200, 200);
+                float: right;
+                margin-right: 0px;
+            }
+            
+            #body3{
+                height: 550px;
+                width: 1200px;
+                position: relative;
+                top: 0px;
+                left: 50%;
+                margin-left: -600px;
+            }
+            #body31{
+                height: 270px;
+                width: 1200px;
+            }
+            #body31>ul>li{
+                height: 270px;
+                width: 230px;
+                background-color: white;
+                float: left;
+                margin-right: 5px;
+                margin-left: 5px;
+                color: rgb(200, 200, 200);
+            }
+            #body31>ul>li>div>img{
+                height: 155px;
+                width: 230px;
+            }
+            #body31>ul>li>div>p{
+                float: left;
+                margin-top: 15px;
+                margin-left: 15px;
+                line-height: 20px;
+                color: black;
+                display: inline;
+            }
+            #body32{
+                height: 270px;
+                width: 1200px;
+            }
+            #body32>ul>li{
+                height: 270px;
+                width: 230px;
+                background-color: white;
+                float: left;
+                margin-right: 5px;
+                margin-left: 5px;
+                margin-top: 10px;
+                color: rgb(200, 200, 200);
+            }
+            #body32>ul>li>div>img{
+                height: 155px;
+                width: 230px;
+            }
+            #body32>ul>li>div>p{
+                float: left;
+                margin-top: 15px;
+                margin-left: 15px;
+                line-height: 20px;
+                color: black;
+                display: inline;
+            }
+
+            #body4{
+                height: 78px;
+                width: 1200px;
+                position: relative;
+                top: 0px;
+                left: 50%;
+                margin-left: -600px;
+            }
+            #body4>p{
+                line-height: 78px;
+                color: black;
+                font-size: 20px;
+                font-weight: lighter;
+                float: left;
+            }
+            #body4>ul{
+                float: left;
+                margin-left: 200px;
+            }
+            #body4>ul>li{
+                /* margin-top: 25px; */
+                height: 78px;
+                width: 124px;
+                line-height: 78px;
+                text-align: center;
+                font-size: 17px;
+                float: left;
+                margin-left: 10px;
+                color: rgb(150, 150, 150);
+            }
+            #body5{
+                height: 270px;
+                width: 1200px;
+                position: relative;
+                top: 0px;
+                left: 50%;
+                margin-left: -600px;
+            }
+            #body5>ul>li{
+                height: 270px;
+                width: 230px;
+                background-color: white;
+                float: left;
+                margin-right: 5px;
+                margin-left: 5px;
+                color: rgb(200, 200, 200);
+            }
+            #body5>ul>li>div>img{
+                height: 155px;
+                width: 230px;
+            }
+            #body5>ul>li>div>p{
+                float: left;
+                margin-top: 15px;
+                margin-left: 15px;
+                line-height: 30px;
+                color: black;
+                display: inline;
+            }
+
+            #body6{
+                height: 410px;
+                width: 1200px;
+                position: relative;
+                top: 0px;
+                left: 50%;
+                margin-left: -600px;
+            }
+            #body6>p{
+                float: left;
+                height: 85px;
+                width: auto;
+                line-height: 85px;
+            }
+
+            #body61{
+                height: 320px;
+                width: 1200px;
+                float: left;
+            }
+            #body61>img{
+                width: 470px;
+                height: 320px;
+            }
+            #body62{
+                height: 470px;
+                width: 730px;
+                float: right;
+            }
+            #body62>ul>li{
+                    height: 320px;
+                    width: 230px;
+                    float: left;
+                    margin-left: 13px;
+            }
+            #body62>ul>li>img{
+                height: 320px;
+                width: 230px;
+            }
+
+            #theFoot{
+                background-color: white;
+                height: 420px;
+                width: auto;
+            }
+            #tureFoot{
+                height: 420px;
+                width: 1200px;
+                position: relative;
+                top: 0px;
+                left: 50%;
+                margin-left: -600px;
+            }
+
+            #foot1{
+                height: 420px;
+                width: 600px;
+                float: left;
+            }
+            #foot1>h1{
+                color: rgb(0, 165, 255);
+                font-weight: bold;
+                margin-top: 125px;
+            }
+            #foot11{
+                margin-top: 30px;
+                font-size: 13px;
+            }
+            #foot12{
+                margin-top: 30px;
+                color: rgb(0, 165, 255);
+                border: solid 1px rgb(0, 165, 255);
+                height: 35px;
+                width: 120px;
+                line-height: 35px;
+                text-align: center;
+            }
+            .foot2{
+                height: 420px;
+                width: 200px;
+                float: left;
+            }
+            .foot2>h3{
+                font-size: 15px;
+                margin-top: 130px;
+                line-height: 15px;
+                font-weight: lighter;
+                margin-bottom: 10px;
+                margin-left: 100px;
+            }
+            .foot2>ul>li{
+                font-size: 12px;
+                margin-top: 10px;
+                line-height: 12px;
+                margin-left: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id = "theHead">
+            <div id = "tureHead">
+                <p id = "head1">雪梨在线</p>
+                <ul id = "head2">
+                    <li id = "head21">首页</li>
+                    <li>课程</li>
+                    <li id = "head22">职业规划</li>
+                </ul>
+                <div id = "head3">
+                    <p id = "head31">
+                        &nbsp;&nbsp;输入关键字
+                        <img src="img/search.png" alt="搜索">
+                    </p>
+                    
+                </div>
+                <p id = "head4">个人中心</p>
+                </div>
+        </div>
+
+        <div id = "theNeck">
+            <div id = "tureNeck">
+                <div id = "neck1">
+                    <ul>
+                        <li style="color: rgb(1, 172, 245);">前端开发&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></li>
+                        <li>后端开发&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></li>
+                        <li>移动开发&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></li>
+                        <li>人工智能&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></li>
+                        <li>商业预测&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></li>
+                        <li>云计算&大数据&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></li>
+                        <li>运维%从测试&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></li>
+                        <li>UI设计&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></li>
+                        <li>产品&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></li>
+                    </ul>
+                </div>
+                <img src="img/neck.png" alt="主图">
+            </div>
+            
+            
+        </div>
+
+        <div id = "theBody">
+            <div id = "body1">
+                <ul>
+                    <li style="color: rgb(0, 165, 255);">精品推荐</li>
+                    <li>JQuery</li>
+                    <li>Spark</li>
+                    <li>MySQL</li>
+                    <li>JavaWeb</li>
+                    <li>MySQL</li>
+                    <li style="border-right: none;">JavaWeb</li>
+                </ul>
+                <p>修改兴趣</p>
+            </div>
+            <div id = "body2">
+                <p id = "body21">精品推荐</p>
+                <p id = "body22">查看全部</p>
+            </div>
+            
+            <div id = "body3">
+                <div id = "body31">
+                    <ul>
+                        <li>
+                            <div>
+                                <img src="img/b1.png" alt="1">
+                                <p>Think PHP 5.0 博客系统实战项目演练</p><br>
+                                <p style="color: rgb(255, 145, 89);">高级</p><p style="color: rgb(200, 200, 200);">· 1125人在学习</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="img/b2.png" alt="1">
+                                <p>Android 网络图片加载框架详解</p>
+                                <p style="color: rgb(255, 145, 89);">高级</p><p style="color: rgb(200, 200, 200);">· 1125人在学习</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="img/b3.png" alt="1">
+                                <p>Angular 2 最新框架+主流技术+项目实战</p>
+                                <p style="color: rgb(255, 145, 89);">高级</p><p style="color: rgb(200, 200, 200);">· 1125人在学习</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="img/b4.png" alt="1">
+                                <p>Android Hybrid APP开发实战 H5+原生！</p>
+                                <p style="color: rgb(255, 145, 89);">高级</p><p style="color: rgb(200, 200, 200);">· 1125人在学习</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="img/b4.png" alt="1">
+                                <p>Android Hybrid APP开发实战 H5+原生！</p>
+                                <p style="color: rgb(255, 145, 89);">高级</p><p style="color: rgb(200, 200, 200);">· 1125人在学习</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id = "body32">
+                    <ul>
+                        <li>
+                            <div>
+                                <img src="img/b1.png" alt="1">
+                                <p>Think PHP 5.0 博客系统实战项目演练</p>
+                                <p style="color: rgb(255, 145, 89);">高级</p><p style="color: rgb(200, 200, 200);">· 1125人在学习</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="img/b2.png" alt="1">
+                                <p>Android 网络图片加载框架详解</p>
+                                <p style="color: rgb(255, 145, 89);">高级</p><p style="color: rgb(200, 200, 200);">· 1125人在学习</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="img/b3.png" alt="1">
+                                <p>Angular 2 最新框架+主流技术+项目实战</p>
+                                <p style="color: rgb(255, 145, 89);">高级</p><p style="color: rgb(200, 200, 200);">· 1125人在学习</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="img/b4.png" alt="1">
+                                <p>Android Hybrid APP开发实战 H5+原生！</p>
+                                <p style="color: rgb(255, 145, 89);">高级</p><p style="color: rgb(200, 200, 200);">· 1125人在学习</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="img/b4.png" alt="1">
+                                <p>Android Hybrid APP开发实战 H5+原生！</p>
+                                <p style="color: rgb(255, 145, 89);">高级</p><p style="color: rgb(200, 200, 200);">· 1125人在学习</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id = "body4">
+                <p>前端开发工程师</p>
+                <ul>
+                    <li style="color: rgb(1, 172, 245);">热门</li>
+                    <li>初级</li>
+                    <li>中级</li>
+                    <li>高级</li>
+                </ul>
+                <p style="float: right; font-weight: lighter; color: rgb(150, 150, 150);">查看全部</p>
+            </div>
+            
+            <div id = "body5">
+                <ul>
+                    <li>
+                        <div>
+                            <img src="img/c1.png" alt="1">
+                            <p style="width: 200px; height: 40px;">微软人工智能-数据分析平台</p><br>
+                            <p style="color: rgb(255, 145, 89);">高级</p><p style="color: rgb(200, 200, 200);">· 1125人在学习</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="img/c2.png" alt="1">
+                            <p style="width: 200px; height: 40px;">Unity Porfiler入门 </p><br>
+                            <p style="color: rgb(255, 145, 89);">高级</p><p style="color: rgb(200, 200, 200);">· 1125人在学习</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="img/c3.png" alt="1">
+                            <p style="width: 200px; height: 40px;">Cocos2d-x 引擎源码中的纹理优化</p><br>
+                            <p style="color: rgb(255, 145, 89);">高级</p><p style="color: rgb(200, 200, 200);">· 1125人在学习</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="img/c4.png" alt="1">
+                            <p style="width: 200px; height: 40px;">Kami首页页面切换效果</p><br>
+                            <p style="color: rgb(255, 145, 89);">高级</p><p style="color: rgb(200, 200, 200);">· 1125人在学习</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="img/c5.png" alt="1">
+                            <p style="width: 200px; height: 40px;">Android Hybrid APP开发实战 H5+原生！</p><br>
+                            <p style="color: rgb(255, 145, 89);">高级</p><p style="color: rgb(200, 200, 200);">· 1125人在学习</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id = "body6">
+                <p>牛人推荐</p>
+                <div id = "body61">
+                    <img src="img/biyeji.png" alt="毕业季">
+                    <div id = "body62">
+                        <ul>
+                            <li>
+                                <img src="img/d2.png" alt="1">
+                            </li>
+                            <li>
+                                <img src="img/d3.png" alt="1">
+                            </li>
+                            <li>
+                                <img src="img/d4.png" alt="1">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div id = "theFoot">
+            <div id = "tureFoot">
+                <div id = "foot1">
+                    <h1>雪梨在线</h1>
+                    <p id = "foot11">致力于普及中国最好的教育，与中国一流大学和机构合作提供在线课程。</p>
+                    <p id = "foot12">下载APP</p>
+                </div>
+                <div class = "foot2">
+                    <h3>关于雪梨网</h3>
+                    <ul>
+                        <li>关于</li><br>
+                        <li>管理团队</li><br>
+                        <li>工作机会</li><br>
+                        <li>客户服务</li><br>
+                        <li>帮助</li>
+                    </ul>
+                </div>
+                <div class = "foot2">
+                    <h3>新手指南</h3>
+                    <ul>
+                        <li>如何注册</li><br>
+                        <li>如何选课</li><br>
+                        <li>如何拿到毕业证</li><br>
+                        <li>学分是什么</li><br>
+                        <li>考试未通过怎么办</li>
+                    </ul>
+                </div>
+                <div class = "foot2">
+                    <h3>合作伙伴</h3>
+                    <ul>
+                        <li>合作机构</li><br>
+                        <li>合作导师</li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </body>
+</html>
